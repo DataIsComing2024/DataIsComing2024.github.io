@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiPlants</title>
+    <link rel="icon" href="assets/img/olive.ico">
+    <!-- Importar la fuente desde Google Fonts -->
+    <link rel="stylesheet" href="assets/css/styles_gen.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1 class="logotitulo">
+                    <img src="assets/img/olive.png" width="40px" height="40px" alt="logo"
+                        style="vertical-align: middle;">
+                    ApiPlants
+                </h1>
+                <!-- Contenedor para mostrar respuestas de saludo y información -->
+                <div class="response" id="infoContainer"></div>
+                <div class="form_file" id="formoContainer">
+                    <!-- Formulario para subir la imagen y analizarla -->
+                    <form class="uploadForm" id="uploadForm" enctype="multipart/form-data">
+                        <input type="file" name="file" accept="image/*" required id="fileInput">
+                        <br>
+                        <!-- Contenedor para vista previa de la imagen -->
+                        <img id="imagePreview" class="preview" alt="Image Preview" style="display: none;">
+                        <br>
+                        <button type="submit">Analyze</button>
+                    </form>
+                </div>
+                <!-- Botón para recargar la página y permitir otra consulta -->
+                <button id="reload-button" class="reload-button" onclick="location.reload()">Nueva Consulta</button>
+            </div>
+            <div class="column">
+                <h1 class="logotitulo">
+                    <img src="assets/img/spinach.png" width="40px" height="40px" alt="logo"
+                        style="vertical-align: middle;">
+                    ChatPlants
+                </h1>
+                <div id="chat-history" class="chat-history  hidden"></div>
+                <input id="id-rag" type="hidden" value="" name="id">
+                <input type="text" id="query-input" placeholder="Escribe tu pregunta sobre plantas...">
+                <button id="send-button" class="button-chat">Buscar la respuesta</button>
+                <button id="reset-button" class="button-chat  hidden">Iniciar nueva conversación</button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="responseAnalize" class="full-width">
+                <!-- Contenedor para mostrar la respuesta del análisis -->
+                <div class="info" id="responseContainer"></div>
+
+                <!-- Contenedor para mostrar la despedida -->
+                <div class="info" id="farewellContainer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script_utils.js"></script>
+    <script src="assets/js/script_api.js"></script>
+    <script src="assets/js/script_chat.js"></script>
+
+</body>
+
+</html>
