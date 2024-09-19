@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px 20px;
+    /* Reducido el padding para que el contenido esté más arriba */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Cambiado a flex-start para que el contenido esté al inicio */
+    background-image: url('assets/img/background.png');
+    /* Cambia esto por la ruta de tu imagen */
+    background-size: cover;
+    /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center;
+    /* Centra la imagen en la pantalla */
+    font-size: 18px;
+    /* Aumentado el tamaño de la letra */
+    color: #333;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 40%;
+    padding: 10px;
+}
+.full-width {
+    width: 80%;
+    padding: 10px;
+}    
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: rgb(24, 23, 23);
+    /* Cambia el color del texto */
+    background-color: rgba(225, 221, 221, 0.484);
+    /* Fondo semitransparente titulo*/
+    padding: 10px 20px;
+    /* Espaciado interno para que se vea mejor */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    display: inline-block;
+    /* Para que el cuadro se ajuste al contenido */
+}
+
+form {
+    border: 1px solid #ddd;
+    /* cuadro para elegir archivo */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 18px;
+    /* Ajustar el tamaño de la letra en el formulario */
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+    font-size: 16px;
+    /* Aumentar el tamaño del texto del input */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3c523d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Aumentar el tamaño del texto del botón */
+}
+
+button:hover {
+    background-color: #3c523d;
+}
+
+.response {
+    margin-top: 20px;
+    padding: 15px;
+    /* Aumentado el padding para mejor legibilidad */
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(151, 148, 148, 0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow-x: auto;
+    font-size: 18px;
+    /* Ajustar el tamaño de la letra en las respuestas */
+}
+
+.preview {
+    margin-top: 10px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reload-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #d8dada63;
+    color: rgb(7, 6, 6);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Aumentar el tamaño del texto del botón de recarga */
+}
+
+.reload-button:hover {
+    background-color: #d8dada63;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* h1 {
+    text-align: center;
+} */
+
+.chat-history {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.message.user {
+    text-align: right;
+    color: blue;
+}
+
+.message.bot {
+    text-align: left;
+    color: green;
+}
+
+#query-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#send-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
