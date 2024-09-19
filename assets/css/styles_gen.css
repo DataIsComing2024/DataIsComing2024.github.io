@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px 20px;
+  /* Reducido el padding para que el contenido esté más arriba */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* Cambiado a flex-start para que el contenido esté al inicio */
+  background-image: url("../img/background.png");
+  /* Cambia esto por la ruta de tu imagen */
+  background-size: cover;
+  /* Ajusta la imagen para que cubra todo el fondo */
+  background-position: center;
+  /* Centra la imagen en la pantalla */
+  font-size: 18px;
+  /* Aumentado el tamaño de la letra */
+  color: #333;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 45%;
+  padding: 20px;
+  background-color: rgba(130, 181, 143, 0.484);
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.full-width {
+  flex: 90%;
+  /* width: 100%; */
+  padding: 20px;
+  background-color: rgba(130, 181, 143, 0.484);
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  /* display: inline-block; */
+}
+.hidden {
+  display: none;
+}
+
+.logotitulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: rgb(24, 23, 23);
+  /* Cambia el color del texto */
+  background-color: rgba(225, 221, 221, 0.484);
+  /* Fondo semitransparente titulo*/
+  padding: 10px 20px;
+  /* Espaciado interno para que se vea mejor */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  display: inline-block;
+  /* Para que el cuadro se ajuste al contenido */
+
+}
+
+.uploadForm {
+  border: 1px solid #ddd;
+  /* cuadro para elegir archivo */
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-size: 18px;
+  /* Ajustar el tamaño de la letra en el formulario */
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+  font-size: 16px;
+  /* Aumentar el tamaño del texto del input */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3c523d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  /* Aumentar el tamaño del texto del botón */
+}
+
+button:hover {
+  background-color: #3c523d;
+}
+
+.response {
+  
+  margin-top: 20px;
+  padding: 15px;
+  /* Aumentado el padding para mejor legibilidad */
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(151, 148, 148, 0.1);
+  width: 90%;
+  max-width: 600px;
+  overflow-x: auto;
+  font-size: 18px;
+  /* Ajustar el tamaño de la letra en las respuestas */
+}
+.form_file {
+  margin-top: 20px;
+  padding: 15px;
+  /* Aumentado el padding para mejor legibilidad */
+  border: 1px solid #ddd;
+  background-color: rgba(225, 221, 221, 0.484);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(151, 148, 148, 0.1);
+  width: 90%;
+  max-width: 600px;
+  overflow-x: auto;
+  font-size: 18px;
+  /* Ajustar el tamaño de la letra en las respuestas */
+}
+.preview {
+  margin-top: 10px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reload-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgba(43, 74, 46, 0.85);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  /* Aumentar el tamaño del texto del botón de recarga */
+}
+
+.reload-button:hover {
+  background-color: #d8dada63;
+}
+
+.info {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: justify;
+  background-color: #f7f7f7;
+}
+
+a.long-url {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+.titulo_res {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.chat-history {
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: rgba(225, 221, 221, 0.8);
+  box-shadow: 0 0 10px rgba(151, 148, 148, 0.1);
+  width: 90%;
+  max-width: 600px;
+  overflow-x: auto;
+  font-size: 18px;
+  max-height: 600px;
+}
+
+.message {
+  margin: 10px 0;
+  border-bottom: 2px solid green;
+}
+
+.message.user {
+  text-align: left;
+  color: rgb(14, 14, 113);
+}
+
+.message.user.icon-text::before {
+  content: "\f75b"; /* Código del icono de usuario en Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.message.bot {
+  text-align: left;
+  color: rgb(21, 66, 21);
+}
+.message.bot.icon-text::before {
+  content: "\f4d8"; /* Código del icono de usuario en Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+#query-input {
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: rgba(225, 221, 221, 0.9);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+.button-chat{
+  width: 45%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgba(43, 74, 46, 0.85);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#send-button:hover {
+  background-color: rgb(14, 14, 113);
+}
+
+/*----------------------------------------------------------------*/
+/* MEDIAS */
+
+@media (max-width: 400px) {
+  .template-pks {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+  #index {
+    display: none;
+  }
+  .sube {
+    position: fixed;
+    right: 5vw;
+    bottom: 90px;
+  }
+  #experiencia .llenguatge {
+    width: 200px;
+  }
+}
+
+@media (min-width: 400px) {
+  #index {
+    top: 75vw;
+    left: 60vw;
+  }
+  .sube {
+    position: fixed;
+    right: 5vw;
+    bottom: 80px;
+  }
+  #experiencia .llenguatge {
+    width: 200px;
+  }
+}
+
+@media (min-width: 600px) {
+  #index {
+    top: 30vw;
+    left: 60vw;
+  }
+  .sube {
+    position: fixed;
+    right: 5vw;
+    bottom: 80px;
+  }
+  #experiencia .llenguatge {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  #index {
+    top: 28vw;
+    left: 65vw;
+  }
+  #experiencia .llenguatge {
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  #index {
+    top: 28vw;
+    left: 70vw;
+  }
+  #experiencia .llenguatge {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #index {
+    top: 28vw;
+    left: 70vw;
+  }
+  #experiencia .llenguatge {
+    width: 300px;
+  }
+}
